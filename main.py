@@ -246,7 +246,7 @@ async def a2a_endpoint(request: JSONRPCRequest):
             print(f"Reminder set for {context_id} at {reminder_time}. Total reminders: {len(reminders)}")
             
             # Send a nice confirmation message
-            time_str = reminder_time.strftime("%-I:%M %p on %b %d") # e.g., "4:30 PM on Oct 31"
+            time_str = reminder_time.strftime("%I:%M %p on %b %d") # e.g., "4:30 PM on Oct 31"
             reply_text = f"✅ Got it! I'll remind you to \"{message_text}\" at {time_str}."
         
     else:
