@@ -111,7 +111,7 @@ curl -X POST 'http://localhost:8000/a2a/ron' \
     }
   }
 }'
-
+```
 
   * **You will see:** An immediate JSON reply confirming the reminder.
   * **In your bot's terminal:** You will see a log that the reminder was set.
